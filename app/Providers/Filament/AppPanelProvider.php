@@ -28,6 +28,7 @@ class AppPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->passwordReset()
             ->authGuard('web')
             ->colors([
                 'primary' => Color::Blue,
