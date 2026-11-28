@@ -1,0 +1,7 @@
+pre-push:
+  commands:
+    all:
+      run: |
+        set -xe
+
+        docker compose exec -T app composer quality
